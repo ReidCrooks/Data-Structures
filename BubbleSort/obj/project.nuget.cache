@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B5JBHSQ66pEFZcVpv4ybXxD4069N/CFliLPzhqSliYPedRqN1XDmTzZmRpVgPVDvtno4XYioHkNNFBPIaJ5+tQ==",
+  "dgSpecHash": "E+Cwkz3itwlYuSx75CXUxHXbJLiitT6fdK9hRMJS4EqnORifYuBgvzKSSPrgx5MlHw+oku3bB1mlyeZ1DezKyQ==",
   "success": true,
-  "projectFilePath": "/home/reid/CSC3102/ProgrammingPortfolio/BubbleSort/BubbleSort.csproj",
+  "projectFilePath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/BubbleSort.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -12,3 +12,11 @@
 /home/reid/CSC3102/ProgrammingPortfolio/BubbleSort/obj/Debug/net8.0/BubbleSort.pdb
 /home/reid/CSC3102/ProgrammingPortfolio/BubbleSort/obj/Debug/net8.0/BubbleSort.genruntimeconfig.cache
 /home/reid/CSC3102/ProgrammingPortfolio/BubbleSort/obj/Debug/net8.0/ref/BubbleSort.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.AssemblyInfoInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.AssemblyInfo.cs
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.sourcelink.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/refint/BubbleSort.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/obj/Debug/net8.0/BubbleSort.pdb

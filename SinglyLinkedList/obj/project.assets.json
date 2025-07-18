@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/reid/CSC3102/ProgrammingPortfolio/SinglyLinkedList/SinglyLinkedList.csproj",
+      "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/SinglyLinkedList/SinglyLinkedList.csproj",
       "projectName": "SinglyLinkedList",
-      "projectPath": "/home/reid/CSC3102/ProgrammingPortfolio/SinglyLinkedList/SinglyLinkedList.csproj",
+      "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/SinglyLinkedList/SinglyLinkedList.csproj",
       "packagesPath": "/home/reid/.nuget/packages/",
-      "outputPath": "/home/reid/CSC3102/ProgrammingPortfolio/SinglyLinkedList/obj/",
+      "outputPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/SinglyLinkedList/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/reid/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BubbleSort
-build_property.ProjectDir = /home/reid/CSC3102/ProgrammingPortfolio/BubbleSort/
+build_property.ProjectDir = /home/reid/CSC3102/Programming Portfolio/Data-Structures/BubbleSort/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

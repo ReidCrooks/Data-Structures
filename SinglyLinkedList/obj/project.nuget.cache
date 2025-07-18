@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oco75WbRl1dFAykUkrWcywxxTYSTBlzcYHS64FTBH/l1czMlW6wHM9bUXbFVc6sofAN1qk+LnzwfS5pKjUp/Zg==",
+  "dgSpecHash": "rK7jwrkTzGL//9IcvvgP2ZQ65u4XH4O6uMycDSxHZASqh0tZoQNLBrtmltDED7A/NnHer+5890bbspJZdcHakw==",
   "success": true,
-  "projectFilePath": "/home/reid/CSC3102/ProgrammingPortfolio/SinglyLinkedList/SinglyLinkedList.csproj",
+  "projectFilePath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/SinglyLinkedList/SinglyLinkedList.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

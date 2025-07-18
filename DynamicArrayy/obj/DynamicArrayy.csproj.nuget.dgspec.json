@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/DynamicArrayy.csproj": {}
+    "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/DynamicArrayy.csproj": {}
   },
   "projects": {
-    "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/DynamicArrayy.csproj": {
+    "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/DynamicArrayy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/DynamicArrayy.csproj",
+        "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/DynamicArrayy.csproj",
         "projectName": "DynamicArrayy",
-        "projectPath": "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/DynamicArrayy.csproj",
+        "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/DynamicArrayy.csproj",
         "packagesPath": "/home/reid/.nuget/packages/",
-        "outputPath": "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/",
+        "outputPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/reid/.nuget/NuGet/NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

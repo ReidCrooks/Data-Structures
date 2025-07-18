@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E7LndhD4YlcZZ7RWzVbJqyefDkwy2ebJ7QJCF8DVcInL/6m2V1GhAD17sTFhItXTOiY3nSWDBCw51VMhLxnXIA==",
+  "dgSpecHash": "ZT0Ao4RNwft00XRpajdYkRmavsP/86eaGivZ/sNNWLBjnu1dPtH4lTI+XO0ZB5cz4iekkNA9AC5DqJCgNQi3/w==",
   "success": true,
-  "projectFilePath": "/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/DynamicArrayy.csproj",
+  "projectFilePath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/DynamicArrayy/DynamicArrayy.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
