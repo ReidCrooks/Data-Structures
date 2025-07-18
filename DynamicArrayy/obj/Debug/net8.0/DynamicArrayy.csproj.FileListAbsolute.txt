@@ -1,0 +1,14 @@
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/bin/Debug/net8.0/DynamicArrayy
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/bin/Debug/net8.0/DynamicArrayy.deps.json
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/bin/Debug/net8.0/DynamicArrayy.runtimeconfig.json
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/bin/Debug/net8.0/DynamicArrayy.dll
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/bin/Debug/net8.0/DynamicArrayy.pdb
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.AssemblyInfoInputs.cache
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.AssemblyInfo.cs
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.dll
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/refint/DynamicArrayy.dll
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.pdb
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/DynamicArrayy.genruntimeconfig.cache
+/home/reid/CSC3102/ProgrammingPortfolio/DynamicArrayy/obj/Debug/net8.0/ref/DynamicArrayy.dll

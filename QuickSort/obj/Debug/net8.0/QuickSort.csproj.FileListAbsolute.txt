@@ -1,0 +1,14 @@
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.AssemblyInfoInputs.cache
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.AssemblyInfo.cs
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/bin/Debug/net8.0/QuickSort
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/bin/Debug/net8.0/QuickSort.deps.json
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/bin/Debug/net8.0/QuickSort.runtimeconfig.json
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/bin/Debug/net8.0/QuickSort.dll
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/bin/Debug/net8.0/QuickSort.pdb
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.dll
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/refint/QuickSort.dll
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.pdb
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/QuickSort.genruntimeconfig.cache
+/home/reid/CSC3102/ProgrammingPortfolio/QuickSort/obj/Debug/net8.0/ref/QuickSort.dll
