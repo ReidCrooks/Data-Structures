@@ -35,7 +35,7 @@ namespace SinglyLinkedList
             else
             {
                 Node<LType>? current = head;
-                for (int i = 0; i < pos; i++)
+                for (int i = 0; i < pos - 1; i++)
                 {
                     current = current!.Next;
                 }
@@ -86,17 +86,50 @@ namespace SinglyLinkedList
 
         public LType Get(int pos)
         {
-            return default;
+            if (pos < 0 || pos >= num_elements)
+            {
+                throw new ArgumentOutOfRangeException("Index is out of range");
+            }
+            //Iterates to specified position
+            Node<LType>? current = head;
+            for (int i = 0; i < pos; i++)
+            {
+                current = current!.Next;
+            }
+            return current!.Data;
         }
 
-        public LType Set(int pos)
+        public LType Set(LType val, int pos)
         {
-            return default;
+            if (pos < 0 || pos >= num_elements)
+            {
+                throw new ArgumentOutOfRangeException("Index is out of range");
+            }
+            if (pos == 0)
+            {
+                LType oldValue = Get(0);
+                RemoveHead();
+                AddHead(val);
+                return oldValue;
+            }
+            Node<LType>? current = head;
+            Node<LType>? prev = null;
+            for (int i = 0; i < pos; i++)
+            {
+                prev = current;
+                current = current!.Next;
+            }
+
+            LType currentData = current!.Data;
+            current.Data = val;
+            prev.Next = current;
+            return currentData;
+
         }
 
         public int Size()
         {
-            return default;
+            return num_elements;
         }
         //Add node to head of list
         public void AddHead(LType item)
@@ -193,25 +226,5 @@ namespace SinglyLinkedList
             Console.WriteLine();
         }
 
-    }
-    class Project
-    {
-        static void Main(string[] args)
-        {
-            LinkedListAPI<int> list = new LinkedListAPI<int>();
-            list.AddAt(1, 0);
-            list.printList();
-            list.AddAt(2, 1);
-            list.printList();
-            list.AddAt(3, 2);
-            list.printList();
-            list.AddTail(4);
-            list.printList();
-            list.AddAt(5, 1);
-            list.printList();
-            list.RemoveAt(4);
-            list.printList();
-
-        }
     }
 }
