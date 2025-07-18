@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace SinglyLinkedList
 {
@@ -35,7 +37,7 @@ namespace SinglyLinkedList
                 Node<LType>? current = head;
                 for (int i = 0; i < pos; i++)
                 {
-                    current = current.Next;
+                    current = current!.Next;
                 }
                 if (current != null)
                 {
@@ -47,14 +49,39 @@ namespace SinglyLinkedList
                 else
                 {
                     AddTail(val);
-                    num_elements++;
                 }
             }
         }
 
         public LType RemoveAt(int pos)
         {
-            return default;
+            if (pos < 0 || pos >= num_elements)
+            {
+                throw new ArgumentOutOfRangeException("Index is out of range");
+            }
+            if (pos == 0)
+            {
+                return RemoveHead();
+            }
+            else
+            {
+                Node<LType>? current = head;
+                for (int i = 0; i < pos - 1; i++)
+                {
+                    current = current!.Next;
+                }
+                if (current != null)
+                {
+                    Node<LType>? removedNode = current.Next;
+                    current.Next = removedNode!.Next;
+                    num_elements--;
+                    return removedNode.Data;
+                }
+                else
+                {
+                    return RemoveTail();
+                }
+            }
         }
 
         public LType Get(int pos)
@@ -71,22 +98,24 @@ namespace SinglyLinkedList
         {
             return default;
         }
-
+        //Add node to head of list
         public void AddHead(LType item)
         {
             if (num_elements == 0)
             {
-                Node<LType> newNode = new Node<LType>(item, null);
+                Node<LType>? newNode = new Node<LType>(item, null);
                 head = newNode;
+                num_elements++;
             }
             else
             {
-                Node<LType> newNode = new Node<LType>(item, head);
+                Node<LType>? newNode = new Node<LType>(item, head);
+                head = newNode;
+                num_elements++;
             }
-            num_elements++;
 
         }
-
+        //Add node to tail of list
         public void AddTail(LType item)
         {
             if (head == null)
@@ -100,13 +129,61 @@ namespace SinglyLinkedList
                 {
                     current = current.Next;
                 }
-                current.Next = new Node<LType>(item, null);
+                current!.Next = new Node<LType>(item, null);
+            }
+            num_elements++;
+        }
+        public LType RemoveHead()
+        {
+            if (head == null)
+            {
+                return default;
+            }
+            else
+            {
+
+                Node<LType>? removedHead = head;
+                head = head.Next;
+                num_elements--;
+                return removedHead.Data;
             }
         }
 
+        public LType RemoveTail()
+        {
+            //No nodes in list
+            if (head == null)
+            {
+                return default;
+            }
+
+            if (head.Next == null)
+            {
+                // Only one node in the list
+                LType data = head.Data;
+                head = null;
+                num_elements--;
+                return data;
+            }
+            else
+            {
+                Node<LType> current = head;
+                Node<LType>? prev = null;
+                while (current.Next != null)
+                {
+                    prev = current;
+                    current = current.Next;
+                }
+                Node<LType>? nodeRemovedTail = current;
+                current = null;
+                prev!.Next = null;
+                num_elements--;
+                return nodeRemovedTail.Data;
+            }
+        }
         public void printList()
         {
-            Node<LType> node = head;
+            Node<LType>? node = head;
             while (node != null)
             {
                 Console.Write(" " + node.Data + " ");
@@ -132,7 +209,9 @@ namespace SinglyLinkedList
             list.printList();
             list.AddAt(5, 1);
             list.printList();
+            list.RemoveAt(4);
+            list.printList();
 
+        }
     }
-   }
 }
