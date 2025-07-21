@@ -1,40 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    internal class StackAPI<SType>
+    public class StackAPI<SType>
     {
+        LinkedListAPI<SType> list;
 
-        
 
         public StackAPI()
         {
-            //constructor
+            list = new LinkedListAPI<SType>();
         }
 
-        
+
         public void Push(SType item)
         {
-
+            list.AddHead(item);
         }
 
         public SType? Pop()
         {
-            return default;
+            if (IsEmpty())
+            {
+                throw new InvalidOperationException();
+            }
+            return list.RemoveHead();
         }
 
         public SType? Peek()
         {
-            return default;
+            if (IsEmpty())
+            {
+                return default;
+            }
+            return list.Get(0);
         }
 
         public int Size()
         {
-            return 0;
+            return list.Size();
+        }
+
+        public bool IsEmpty()
+        {
+            if (list.Size() == 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void printArray()
+        {
+            list.printList();
         }
 
     }
