@@ -5,27 +5,31 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
-class BubbleSort
+
+namespace DataStructures
 {
-    static void Sort(ref int[] list)
+    class BubbleSort
     {
-        bool swapped;
-        for (int j = 0; j < list.Length; j++)
+        static void Sort(ref int[] list)
         {
-            swapped = false;
-            for (int i = 0; i < list.Length - j - 1; i++)
+            bool swapped;
+            for (int j = 0; j < list.Length; j++)
             {
-                if (list[i] > list[i + 1])
+                swapped = false;
+                for (int i = 0; i < list.Length - j - 1; i++)
                 {
-                    int placeHolder = list[i + 1];
-                    list[i + 1] = list[i];
-                    list[i] = placeHolder;
-                    swapped = true;
+                    if (list[i] > list[i + 1])
+                    {
+                        int placeHolder = list[i + 1];
+                        list[i + 1] = list[i];
+                        list[i] = placeHolder;
+                        swapped = true;
+                    }
                 }
-            }
-            if (!swapped)
-            {
-                break;
+                if (!swapped)
+                {
+                    break;
+                }
             }
         }
     }

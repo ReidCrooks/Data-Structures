@@ -5,9 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
-using DynamicArrayy;
 
-namespace DynamicArrayy
+namespace DataStructures
 {
     internal class DynamicArrayAPI<AType>
     {
