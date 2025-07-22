@@ -1,29 +1,26 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    public class StackAPI<SType>
+    internal class QueueAPI<QType>
     {
-        private LinkedListAPI<SType> list;
 
-
-        public StackAPI()
+        private LinkedListAPI<QType> list;
+        public QueueAPI()
         {
-            list = new LinkedListAPI<SType>();
+            list = new LinkedListAPI<QType>();
         }
 
-
-        public void Push(SType item)
+        public void Enqueue(QType item)
         {
-            list.AddHead(item);
+            list.AddTail(item);
         }
 
-        public SType? Pop()
+        public QType? DeQueue()
         {
             if (IsEmpty())
             {
@@ -32,12 +29,8 @@ namespace DataStructures
             return list.RemoveHead();
         }
 
-        public SType? Peek()
+        public QType? Peek()
         {
-            if (IsEmpty())
-            {
-                return default;
-            }
             return list.Get(0);
         }
 
@@ -48,17 +41,21 @@ namespace DataStructures
 
         public bool IsEmpty()
         {
-            if (list.Size() == 0)
+            if (Size() == 0)
             {
                 return true;
             }
             return false;
         }
 
+        public QType PeekAhead(int num)
+        {
+            return list.Get(num);
+        }
+
         public void printArray()
         {
             list.printList();
         }
-
     }
 }
