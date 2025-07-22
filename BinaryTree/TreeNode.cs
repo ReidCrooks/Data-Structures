@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,30 +6,27 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-    /*
-     * Generic Node Class
-     * Can be extended to add additional references depending on the data structure
-     * Using the generic type <T> allows us to create nodes of ANY type!
-     * Node implements the IEquatable Interface
-     */
+
     public class Node<T> : IEquatable<object>
     {
         private T data;
-        public Node()
+        private Node<T>? lChild;
+        private Node<T>? rChild;
+        private Node<T> parent;
+        public Node(T val, Node<T>? parent, Node<T>? lChild, Node<T>? rChild)
         {
             data = default;
         }
-        /*
-         * Constructor
-         * Node example = new Node<String>; this will create a node of type String, so every instance of T would be the same as if it were a String data tyoe
-         * 
-         */
-        public Node(T val)
+
+        public Node(T val, Node<T>? parent, Node<T>? lChild, Node<T>? rChild)
         {
             data = val;
+            this.parent = parent;
+            this.lChild = lChild;
+            this.rChild = rChild;
 
         }
-        
+
         /**
          * Shorthand to create a Getter and Setter method for Data
          */
@@ -37,6 +34,24 @@ namespace DataStructures
         {
             get { return data; }
             set { data = value; }
+        }
+
+        public Node<T>? Parent
+        {
+            get { return parent; }
+            set { parent = value; }
+        }
+
+        public Node<T>? LChild
+        {
+            get { return lChild; }
+            set { lChild = value; }
+        }
+
+        public Node<T>? RChild
+        {
+            get {return rChild; }
+            set { rChild = value; }
         }
         /*
          * override of the .Equals method to properly allow comparisons between Nodes
@@ -60,7 +75,7 @@ namespace DataStructures
         {
             return base.GetHashCode();
         }
-        
-        
+
+
     }
 }
