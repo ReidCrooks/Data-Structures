@@ -1,23 +1,57 @@
 ﻿namespace DataStructures
 {
 
-    public class PseudoBinaryTree
+    public class BinaryTree<T>
     {
-        internal class BtreeNode : Node<int>
+        internal class BtreeNode : Node<T>
         {
             public BtreeNode? left, right, parent;
+            public int data;
 
             public BtreeNode(int val) : base(val)
             {
                 left = null;
                 right = null;
                 parent = null;
+                data = val;
+            }
+
+            public int Data
+            {
+                get { return data; }
+                set { data = value; }
+            }
+            public BtreeNode? Left
+            {
+                get { return left; }
+                set { left = value; }
+            }
+            public BtreeNode? Right
+            {
+                get { return right; }
+                set { right = value; }
+            }
+            public BtreeNode? Parent
+            {
+                get { return parent; }
+                set { parent = value; }
             }
         }
+
+
         protected BtreeNode? RootNode;
+
+        public BinaryTree()
+        {
+            RootNode = null;
+        }
         public bool Has(int val)
         {
-            //return FindNode(Root)
+            if (FindNode(RootNode, val) != null)
+            {
+                return true;
+            }
+            return false;
         }
         private BtreeNode? FindNode(BtreeNode? current, int val)
         {
@@ -29,11 +63,39 @@
              * if(val < node)
              * go left
              */
+            if (current == null)
+            {
+                return null;
+            }
+            if (current.Data == val)
+            {
+                return current;
+            }
+            else if (val > current.Data)
+            {
+                return FindNode(current.Right, val);
+            }
+            else if (val < current.Data)
+            {
+                return FindNode(current.Left, val);
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public void Add(int val)
         {
-            //BtreeAdd(root, val)
+            if (RootNode == null)
+            {
+                RootNode = new BtreeNode(val);
+            }
+            else
+            {
+                BtreeAdd(RootNode, val);
+            }
+
         }
 
         virtual protected void BtreeAdd(BtreeNode current, int val)
@@ -48,14 +110,36 @@
              * Check left:
              * Same as Check right but with the left child of current
              */
+            if (val > current.Data)
+            {
+                if (current.Right != null)
+                {
+                    BtreeAdd(current.Right, val);
+                }
+                else
+                {
+                    current.Right = new BtreeNode(val);
+                }
+            }
+            else
+            {
+                if (current.Left != null)
+                {
+                    BtreeAdd(current.Left, val);
+                }
+                else
+                {
+                    current.Left = new BtreeNode(val);
+                }
+            }
         }
 
         public int? Remove(int val)
         {
-            //return BTree Remove(root)
+            return BTreeRemove(RootNode, val).Data;
         }
 
-        virtual protected BtreeNode? BtreeRemove(BtreeNode? removal)
+        virtual protected BtreeNode? BtreeRemove(BtreeNode current, int val)
         {
             //If removal is null, return null (item doesnt exist)
             /*
@@ -69,8 +153,81 @@
              * nuke original node
              * 
              */
+            BtreeNode? target = FindNode(current, val);
+            if (target == null)
+            {
+                return null;
+            }
 
+            //Target has no children
+            if (target.Left == null && target.Right == null)
+            {
+                if (target.Parent == null)
+                {
+                    RootNode == null;
+                }
+                else if (target == target.Parent.Left)
+                {
+                    target.Parent.Left = null;
+                }
+                else
+                {
+                    target.Parent.Right = null;
+                }
+            }
+
+            //Target has only left child
+            if (target.Left != null && target.Right == null)
+            {
+                if (target.Parent == null)
+                {
+                    RootNode = target.Left;
+                    target.Left.Parent = null;
+                }
+                else
+                {
+                    if (target == target.Parent.Left)
+                    {
+                        target.Parent.Left = target.Left;
+                    }
+                    else
+                    {
+                        target.Parent.Right = target.Left;
+                    }
+                    target.Left.Parent = target.Parent;
+                }
+            }
+            //Target has only right child
+            if (target.Right != null && target.Left == null)
+            {
+                if (target.Parent == null)
+                {
+                    RootNode = target.Right;
+                    target.Right.Parent = null;
+                }
+                else
+                {
+                    if (target == target.Parent.Left)
+                    {
+                        target.Parent.Left = target.Right;
+                    }
+                    else
+                    {
+                        target.Parent.Right = target.Right;
+                    }
+                    target.Right.Parent = target.Parent;
+                }
+            }
+            //Target has two children
+            else
+            {
+                BtreeNode successor = FindSuccessor(target);
+                target.Data = successor.Data;
+                BtreeRemove(successor, successor.Data);
+            }
+            return target;
         }
+
         /*
          * We hunt for the leftmost child of the right node
          */
@@ -83,18 +240,35 @@
              * OR
              * find right most child of DeadNode's left child
              */
-
+            BtreeNode right = DeadNode.Right;
+            while (right.Left != null)
+            {
+                right = right.Left;
+            }
+            return right;
         }
 
 
         public int Height()
         {
-            //Return FindHeight(root)
+            if (RootNode == null)
+            {
+                return -1;
+            }
+            return FindHeight(RootNode);
         }
 
-        protected int FindHeight(BtreeNode? node, int depth)
+        protected int FindHeight(BtreeNode? node)
         {
             //return 1 + max(left child's height, right child's height
+            if (node == null)
+            {
+                return -1;
+            }
+            else
+            {
+                return 1 + Math.Max(FindHeight(node.Left), FindHeight(node.Right));
+            }
         }
 
 
