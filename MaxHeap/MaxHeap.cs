@@ -37,6 +37,36 @@ public class MaxHeap
         return first;
     }
 
+    public void HeapSort(int[] arr)
+    {
+        MaxHeap tempHeap = new MaxHeap();
+        foreach (int item in arr)
+        {
+            tempHeap.Add(item);
+        }
+
+        for (int i = arr.Length - 1; i >= 0; i--)
+        {
+            arr[i] = tempHeap.Next();
+        }
+    }
+
+    public IEnumerable<int> SortedVals()
+    {
+        int[] arr = new int[heap.Size() - 1];
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            arr[i] = heap.Get(i + 1);
+        }
+
+        HeapSort(arr);
+        foreach (int val in arr)
+        {
+            yield return val;
+        }
+    }
+
     public int Parent(int pos)
     {
         return pos / 2;
@@ -85,22 +115,4 @@ public class MaxHeap
     {
         return heap.Get(1);
     }
-
-    static void Main(string[] args)
-    {
-        MaxHeap heap = new MaxHeap();
-        heap.Add(3);
-        heap.Add(9);
-        heap.Add(5);
-        heap.Add(6);
-        heap.Add(2);
-
-        // Should return 9
-        Console.WriteLine(heap.Next());
-
-        // Should return 6 (next largest)
-        Console.WriteLine(heap.getRoot());
-
-    }
-
 }
