@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/HeapSort/HeapSort.csproj",
-      "projectName": "HeapSort",
-      "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/HeapSort/HeapSort.csproj",
+      "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/MaxHeap.csproj",
+      "projectName": "MaxHeap",
+      "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/MaxHeap.csproj",
       "packagesPath": "/home/reid/.nuget/packages/",
-      "outputPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/HeapSort/obj/",
+      "outputPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/reid/.nuget/NuGet/NuGet.Config"

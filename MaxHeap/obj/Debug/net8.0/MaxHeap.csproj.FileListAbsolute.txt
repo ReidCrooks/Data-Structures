@@ -1,0 +1,15 @@
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/bin/Debug/net8.0/MaxHeap
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/bin/Debug/net8.0/MaxHeap.deps.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/bin/Debug/net8.0/MaxHeap.runtimeconfig.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/bin/Debug/net8.0/MaxHeap.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/bin/Debug/net8.0/MaxHeap.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.AssemblyInfoInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.AssemblyInfo.cs
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.sourcelink.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/refint/MaxHeap.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/MaxHeap.genruntimeconfig.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/MaxHeap/obj/Debug/net8.0/ref/MaxHeap.dll

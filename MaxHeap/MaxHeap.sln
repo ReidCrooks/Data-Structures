@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxHeap", "MaxHeap.csproj", "{AF0AC3C3-678E-535C-1D01-621D4FCF0DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF0AC3C3-678E-535C-1D01-621D4FCF0DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0AC3C3-678E-535C-1D01-621D4FCF0DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0AC3C3-678E-535C-1D01-621D4FCF0DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0AC3C3-678E-535C-1D01-621D4FCF0DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73F4C1D3-902D-4293-8ABB-F09A3CD8252D}
+	EndGlobalSection
+EndGlobal
