@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinaryTree.csproj",
-      "projectName": "BinaryTree",
-      "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinaryTree.csproj",
+      "projectUniqueName": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinarySearchTree.csproj",
+      "projectName": "BinarySearchTree",
+      "projectPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinarySearchTree.csproj",
       "packagesPath": "/home/reid/.nuget/packages/",
       "outputPath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/",
       "projectStyle": "PackageReference",

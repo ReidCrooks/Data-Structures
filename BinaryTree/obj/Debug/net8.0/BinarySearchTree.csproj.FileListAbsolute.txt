@@ -1,0 +1,15 @@
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.AssemblyInfoInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.AssemblyInfo.cs
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.sourcelink.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/bin/Debug/net8.0/BinarySearchTree
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/bin/Debug/net8.0/BinarySearchTree.deps.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/bin/Debug/net8.0/BinarySearchTree.runtimeconfig.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/bin/Debug/net8.0/BinarySearchTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/bin/Debug/net8.0/BinarySearchTree.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/refint/BinarySearchTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/BinarySearchTree.genruntimeconfig.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/obj/Debug/net8.0/ref/BinarySearchTree.dll

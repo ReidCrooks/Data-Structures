@@ -1,9 +1,9 @@
 ﻿namespace DataStructures
 {
 
-    public class BinaryTree<T>
+    public class BinaryTree
     {
-        internal class BtreeNode : Node<T>
+        internal class BtreeNode : Node<int>
         {
             public BtreeNode? left, right, parent;
             public int data;
@@ -39,7 +39,7 @@
         }
 
 
-        protected BtreeNode? RootNode;
+        private BtreeNode? RootNode;
 
         public BinaryTree()
         {
@@ -98,7 +98,7 @@
 
         }
 
-        virtual protected void BtreeAdd(BtreeNode current, int val)
+        private void BtreeAdd(BtreeNode current, int val)
         {
 
             /*
@@ -119,6 +119,7 @@
                 else
                 {
                     current.Right = new BtreeNode(val);
+                    current.Right.Parent = current;
                 }
             }
             else
@@ -130,16 +131,17 @@
                 else
                 {
                     current.Left = new BtreeNode(val);
+                    current.Left.Parent = current;
                 }
             }
         }
 
         public int? Remove(int val)
         {
-            return BTreeRemove(RootNode, val).Data;
+            return BtreeRemove(RootNode, val)?.Data;
         }
 
-        virtual protected BtreeNode? BtreeRemove(BtreeNode current, int val)
+        private BtreeNode? BtreeRemove(BtreeNode current, int val)
         {
             //If removal is null, return null (item doesnt exist)
             /*
@@ -164,7 +166,7 @@
             {
                 if (target.Parent == null)
                 {
-                    RootNode == null;
+                    RootNode = null;
                 }
                 else if (target == target.Parent.Left)
                 {
@@ -177,7 +179,7 @@
             }
 
             //Target has only left child
-            if (target.Left != null && target.Right == null)
+            else if (target.Left != null && target.Right == null)
             {
                 if (target.Parent == null)
                 {
@@ -195,10 +197,11 @@
                         target.Parent.Right = target.Left;
                     }
                     target.Left.Parent = target.Parent;
+
                 }
             }
             //Target has only right child
-            if (target.Right != null && target.Left == null)
+            else if (target.Right != null && target.Left == null)
             {
                 if (target.Parent == null)
                 {
@@ -219,7 +222,7 @@
                 }
             }
             //Target has two children
-            else
+            else if (target.Left != null && target.Right != null)
             {
                 BtreeNode successor = FindSuccessor(target);
                 target.Data = successor.Data;
@@ -240,8 +243,9 @@
              * OR
              * find right most child of DeadNode's left child
              */
+
             BtreeNode right = DeadNode.Right;
-            while (right.Left != null)
+            while (right?.Left != null)
             {
                 right = right.Left;
             }
@@ -258,7 +262,7 @@
             return FindHeight(RootNode);
         }
 
-        protected int FindHeight(BtreeNode? node)
+        private int FindHeight(BtreeNode? node)
         {
             //return 1 + max(left child's height, right child's height
             if (node == null)
@@ -269,6 +273,30 @@
             {
                 return 1 + Math.Max(FindHeight(node.Left), FindHeight(node.Right));
             }
+        }
+
+        private List<BtreeNode> BfirstGather(BtreeNode? root)
+        {
+            var list = new List<BtreeNode>();
+            var queue = new Queue<BtreeNode>();
+
+            if (root != null)
+            {
+                queue.Enqueue(root);
+            }
+
+            while (queue.Count > 0)
+            {
+                var node = queue.Dequeue();
+                list.Add(node);
+
+                if (node.Left != null)
+                    queue.Enqueue(node.Left);
+                if (node.Right != null)
+                    queue.Enqueue(node.Right);
+            }
+
+            return list;
         }
 
 

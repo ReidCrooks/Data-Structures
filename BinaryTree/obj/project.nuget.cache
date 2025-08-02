@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJ8WnWrxT1f6fVdeYLGaAevo/ECyTkPCpx7BHBnwMFU+V0fNR63jB6ztnRbIusySmSYpAZCuC2PQG2dfNjKqRQ==",
+  "dgSpecHash": "aiiJQgy17MmomD9xupWeBPgP+bwK4ylZPRC61KIpdGy5AlmiqIKKfWzJNME34Yd5D/1fr8BQg+ChDmioWNOk5g==",
   "success": true,
-  "projectFilePath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinaryTree.csproj",
+  "projectFilePath": "/home/reid/CSC3102/Programming Portfolio/Data-Structures/BinaryTree/BinarySearchTree.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
