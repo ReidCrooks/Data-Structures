@@ -1,0 +1,15 @@
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.AssemblyInfoInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.AssemblyInfo.cs
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.sourcelink.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/bin/Debug/net8.0/HashTable
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/bin/Debug/net8.0/HashTable.deps.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/bin/Debug/net8.0/HashTable.runtimeconfig.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/bin/Debug/net8.0/HashTable.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/bin/Debug/net8.0/HashTable.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/refint/HashTable.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/HashTable.genruntimeconfig.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/HashTable/obj/Debug/net8.0/ref/HashTable.dll

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Drawing;
-using DataStructures;
+
+namespace DataStructures;
 
 public class MaxHeap
 {
