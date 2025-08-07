@@ -1,0 +1,15 @@
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/bin/Debug/net8.0/AVLTree
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/bin/Debug/net8.0/AVLTree.deps.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/bin/Debug/net8.0/AVLTree.runtimeconfig.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/bin/Debug/net8.0/AVLTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/bin/Debug/net8.0/AVLTree.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.GeneratedMSBuildEditorConfig.editorconfig
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.AssemblyInfoInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.AssemblyInfo.cs
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.csproj.CoreCompileInputs.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.sourcelink.json
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/refint/AVLTree.dll
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.pdb
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/AVLTree.genruntimeconfig.cache
+/home/reid/CSC3102/Programming Portfolio/Data-Structures/AVLTree/obj/Debug/net8.0/ref/AVLTree.dll
